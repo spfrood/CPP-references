@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>AddBook.h</itemPath>
+      <itemPath>CarCls.h</itemPath>
+      <itemPath>DayYear.h</itemPath>
+      <itemPath>DayYer2.h</itemPath>
+      <itemPath>FeetInches.h</itemPath>
+      <itemPath>MthCls7.h</itemPath>
+      <itemPath>P1DtCls.h</itemPath>
+      <itemPath>Tests.h</itemPath>
+      <itemPath>TxtNum.h</itemPath>
+      <itemPath>Worker.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>AddBook.cpp</itemPath>
+      <itemPath>DayYear.cpp</itemPath>
+      <itemPath>DayYer2.cpp</itemPath>
+      <itemPath>FeetInches.cpp</itemPath>
+      <itemPath>MthCls7.cpp</itemPath>
+      <itemPath>P1DtCls.cpp</itemPath>
+      <itemPath>Tests.cpp</itemPath>
+      <itemPath>TxtNum.cpp</itemPath>
+      <itemPath>Worker.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+        </ccTool>
+        <linkerTool>
+          <linkerDynSerch>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+          </linkerDynSerch>
+        </linkerTool>
+      </compileType>
+      <item path="AddBook.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AddBook.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CarCls.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DayYear.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DayYear.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DayYer2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DayYer2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="FeetInches.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FeetInches.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MthCls7.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="MthCls7.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="P1DtCls.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="P1DtCls.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Tests.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TxtNum.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TxtNum.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Worker.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Worker.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <standard>8</standard>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <linkerDynSerch>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+          </linkerDynSerch>
+        </linkerTool>
+      </compileType>
+      <item path="AddBook.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AddBook.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CarCls.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DayYear.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DayYear.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DayYer2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DayYer2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="FeetInches.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="FeetInches.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="MthCls7.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="MthCls7.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="P1DtCls.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="P1DtCls.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Tests.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="TxtNum.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="TxtNum.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Worker.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Worker.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

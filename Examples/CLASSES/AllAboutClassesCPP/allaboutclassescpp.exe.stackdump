@@ -1,0 +1,10 @@
+Exception: STATUS_ACCESS_VIOLATION at eip=00401D7D
+eax=00000000 ebx=0000000C ecx=00000000 edx=800483D0 esi=61276380 edi=611A1E9F
+ebp=0028ABF8 esp=0028ABF4 program=C:\Users\Dr. Mark E. Lehr\Desktop\AllAboutClassesCPP\dist\Debug\Cygwin_4.x-Windows\allaboutclassescpp.exe, pid 2272, thread main
+cs=0023 ds=002B es=002B fs=0053 gs=002B ss=002B
+Stack trace:
+Frame     Function  Args
+0028ABF8  00401D7D  (00000000, 00000001, 3D4CCCCD, 3DCCCCCD)
+0028AC68  00401509  (00000001, 0028AC90, 80010100, 612764B4)
+0028ACF8  6100763A  (00000000, 0028CD78, 61006C50, 00000000)
+End of stack trace

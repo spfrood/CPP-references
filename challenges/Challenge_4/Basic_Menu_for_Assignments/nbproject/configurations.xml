@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>Employee.h</itemPath>
+      <itemPath>Prob1Random.h</itemPath>
+      <itemPath>Prob2Sort.h</itemPath>
+      <itemPath>Prob3Table.h</itemPath>
+      <itemPath>Prob3TableInherited.h</itemPath>
+      <itemPath>SavingsAccount.h</itemPath>
+      <itemPath>colors.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>Employee.cpp</itemPath>
+      <itemPath>Prob1Random.cpp</itemPath>
+      <itemPath>SavingsAccount.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+        </ccTool>
+        <linkerTool>
+          <linkerDynSerch>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+          </linkerDynSerch>
+        </linkerTool>
+      </compileType>
+      <item path="Employee.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Employee.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Prob1Random.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Prob1Random.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Prob2Sort.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Prob3Table.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Prob3TableInherited.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SavingsAccount.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SavingsAccount.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="colors.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <standard>8</standard>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <linkerDynSerch>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+            <pElem>.</pElem>
+          </linkerDynSerch>
+        </linkerTool>
+      </compileType>
+      <item path="Employee.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Employee.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Prob1Random.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Prob1Random.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Prob2Sort.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Prob3Table.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Prob3TableInherited.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SavingsAccount.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SavingsAccount.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="colors.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

@@ -1,0 +1,236 @@
+\hypertarget{class_game}{}\section{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game} ()
+\item 
+virtual \hyperlink{class_game_ae3d112ca6e0e55150d2fdbc704474530}{$\sim$\+Game} ()
+\item 
+string \hyperlink{class_game_ab9f516c5cca41cf4807dc71108af4257}{get\+Last} ()
+\item 
+void \hyperlink{class_game_a9acc18b29b10e44174bb4c0c59886469}{set\+Play} (char)
+\item 
+void \hyperlink{class_game_a35e06b7cc99e0577418a5187b4b561ca}{map\+Clr} ()
+\item 
+void \hyperlink{class_game_ab9025f2355418561b9e406dd4b5da02a}{ok\+Shot} (\hyperlink{class_guess}{Guess})
+\item 
+void \hyperlink{class_game_a4e23ede628f25d35813322e4e3f46b01}{set\+Map} (\hyperlink{class_guess}{Guess}, char)
+\item 
+void \hyperlink{class_game_aa4612d0ad265babef74c3a1122d0a395}{set\+Ship} (int, int, int, char)
+\item 
+char \hyperlink{class_game_ac6012fc1a6b2488e87e0212a5cbd6400}{get\+Ship} (int, int) const 
+\item 
+char \hyperlink{class_game_a524880affa0350bb77a2e9ea3199512d}{get\+Gues} (int, int) const 
+\item 
+short \hyperlink{class_game_a91a534be86fc44895bdf01d9da72603f}{get\+Turn} () const 
+\item 
+short \hyperlink{class_game_a35cfb1ebe7f3241f3f0fbe88f466602e}{get\+Hits} () const 
+\item 
+bool \hyperlink{class_game_a05ba5ff17c3d9fcba92187c3e6fcb929}{game\+On} () const 
+\item 
+bool \hyperlink{class_game_af28e7d936753343ceccdccaf58da4971}{get\+Shot} () const 
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_game_a7bb9176e07b6f6c73c930dba6400265f}{operator$<$$<$} (ostream \&, const \hyperlink{class_game}{Game} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 28 of file Game.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\subsubsection[{\texorpdfstring{Game()}{Game()}}]{\setlength{\rightskip}{0pt plus 5cm}Game\+::\+Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_game_ad59df6562a58a614fda24622d3715b65}{}\label{class_game_ad59df6562a58a614fda24622d3715b65}
+
+
+Definition at line 17 of file Game.\+cpp.
+
+\index{Game@{Game}!````~Game@{$\sim$\+Game}}
+\index{````~Game@{$\sim$\+Game}!Game@{Game}}
+\subsubsection[{\texorpdfstring{$\sim$\+Game()}{~Game()}}]{\setlength{\rightskip}{0pt plus 5cm}Game\+::$\sim$\+Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_game_ae3d112ca6e0e55150d2fdbc704474530}{}\label{class_game_ae3d112ca6e0e55150d2fdbc704474530}
+
+
+Definition at line 31 of file Game.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Game@{Game}!game\+On@{game\+On}}
+\index{game\+On@{game\+On}!Game@{Game}}
+\subsubsection[{\texorpdfstring{game\+On() const }{gameOn() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\+::game\+On (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_game_a05ba5ff17c3d9fcba92187c3e6fcb929}{}\label{class_game_a05ba5ff17c3d9fcba92187c3e6fcb929}
+
+
+Definition at line 52 of file Game.\+cpp.
+
+\index{Game@{Game}!get\+Gues@{get\+Gues}}
+\index{get\+Gues@{get\+Gues}!Game@{Game}}
+\subsubsection[{\texorpdfstring{get\+Gues(int, int) const }{getGues(int, int) const }}]{\setlength{\rightskip}{0pt plus 5cm}char Game\+::get\+Gues (
+\begin{DoxyParamCaption}
+\item[{int}]{col, }
+\item[{int}]{row}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_game_a524880affa0350bb77a2e9ea3199512d}{}\label{class_game_a524880affa0350bb77a2e9ea3199512d}
+
+
+Definition at line 64 of file Game.\+cpp.
+
+\index{Game@{Game}!get\+Hits@{get\+Hits}}
+\index{get\+Hits@{get\+Hits}!Game@{Game}}
+\subsubsection[{\texorpdfstring{get\+Hits() const }{getHits() const }}]{\setlength{\rightskip}{0pt plus 5cm}short Game\+::get\+Hits (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_game_a35cfb1ebe7f3241f3f0fbe88f466602e}{}\label{class_game_a35cfb1ebe7f3241f3f0fbe88f466602e}
+
+
+Definition at line 72 of file Game.\+cpp.
+
+\index{Game@{Game}!get\+Last@{get\+Last}}
+\index{get\+Last@{get\+Last}!Game@{Game}}
+\subsubsection[{\texorpdfstring{get\+Last()}{getLast()}}]{\setlength{\rightskip}{0pt plus 5cm}string Game\+::get\+Last (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_game_ab9f516c5cca41cf4807dc71108af4257}{}\label{class_game_ab9f516c5cca41cf4807dc71108af4257}
+
+
+Definition at line 48 of file Game.\+cpp.
+
+\index{Game@{Game}!get\+Ship@{get\+Ship}}
+\index{get\+Ship@{get\+Ship}!Game@{Game}}
+\subsubsection[{\texorpdfstring{get\+Ship(int, int) const }{getShip(int, int) const }}]{\setlength{\rightskip}{0pt plus 5cm}char Game\+::get\+Ship (
+\begin{DoxyParamCaption}
+\item[{int}]{col, }
+\item[{int}]{row}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_game_ac6012fc1a6b2488e87e0212a5cbd6400}{}\label{class_game_ac6012fc1a6b2488e87e0212a5cbd6400}
+
+
+Definition at line 60 of file Game.\+cpp.
+
+\index{Game@{Game}!get\+Shot@{get\+Shot}}
+\index{get\+Shot@{get\+Shot}!Game@{Game}}
+\subsubsection[{\texorpdfstring{get\+Shot() const }{getShot() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Game\+::get\+Shot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_game_af28e7d936753343ceccdccaf58da4971}{}\label{class_game_af28e7d936753343ceccdccaf58da4971}
+
+
+Definition at line 56 of file Game.\+cpp.
+
+\index{Game@{Game}!get\+Turn@{get\+Turn}}
+\index{get\+Turn@{get\+Turn}!Game@{Game}}
+\subsubsection[{\texorpdfstring{get\+Turn() const }{getTurn() const }}]{\setlength{\rightskip}{0pt plus 5cm}short Game\+::get\+Turn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_game_a91a534be86fc44895bdf01d9da72603f}{}\label{class_game_a91a534be86fc44895bdf01d9da72603f}
+
+
+Definition at line 68 of file Game.\+cpp.
+
+\index{Game@{Game}!map\+Clr@{map\+Clr}}
+\index{map\+Clr@{map\+Clr}!Game@{Game}}
+\subsubsection[{\texorpdfstring{map\+Clr()}{mapClr()}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::map\+Clr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_game_a35e06b7cc99e0577418a5187b4b561ca}{}\label{class_game_a35e06b7cc99e0577418a5187b4b561ca}
+
+
+Definition at line 34 of file Game.\+cpp.
+
+\index{Game@{Game}!ok\+Shot@{ok\+Shot}}
+\index{ok\+Shot@{ok\+Shot}!Game@{Game}}
+\subsubsection[{\texorpdfstring{ok\+Shot(\+Guess)}{okShot(Guess)}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::ok\+Shot (
+\begin{DoxyParamCaption}
+\item[{{\bf Guess}}]{fire}
+\end{DoxyParamCaption}
+)}\hypertarget{class_game_ab9025f2355418561b9e406dd4b5da02a}{}\label{class_game_ab9025f2355418561b9e406dd4b5da02a}
+
+
+Definition at line 98 of file Game.\+cpp.
+
+\index{Game@{Game}!set\+Map@{set\+Map}}
+\index{set\+Map@{set\+Map}!Game@{Game}}
+\subsubsection[{\texorpdfstring{set\+Map(\+Guess, char)}{setMap(Guess, char)}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::set\+Map (
+\begin{DoxyParamCaption}
+\item[{{\bf Guess}}]{shot, }
+\item[{char}]{dat}
+\end{DoxyParamCaption}
+)}\hypertarget{class_game_a4e23ede628f25d35813322e4e3f46b01}{}\label{class_game_a4e23ede628f25d35813322e4e3f46b01}
+
+
+Definition at line 76 of file Game.\+cpp.
+
+\index{Game@{Game}!set\+Play@{set\+Play}}
+\index{set\+Play@{set\+Play}!Game@{Game}}
+\subsubsection[{\texorpdfstring{set\+Play(char)}{setPlay(char)}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::set\+Play (
+\begin{DoxyParamCaption}
+\item[{char}]{choice}
+\end{DoxyParamCaption}
+)}\hypertarget{class_game_a9acc18b29b10e44174bb4c0c59886469}{}\label{class_game_a9acc18b29b10e44174bb4c0c59886469}
+
+
+Definition at line 89 of file Game.\+cpp.
+
+\index{Game@{Game}!set\+Ship@{set\+Ship}}
+\index{set\+Ship@{set\+Ship}!Game@{Game}}
+\subsubsection[{\texorpdfstring{set\+Ship(int, int, int, char)}{setShip(int, int, int, char)}}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::set\+Ship (
+\begin{DoxyParamCaption}
+\item[{int}]{row, }
+\item[{int}]{col, }
+\item[{int}]{size, }
+\item[{char}]{ver\+Hor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_game_aa4612d0ad265babef74c3a1122d0a395}{}\label{class_game_aa4612d0ad265babef74c3a1122d0a395}
+
+
+Definition at line 113 of file Game.\+cpp.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Game@{Game}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Game@{Game}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{, }
+\item[{const {\bf Game} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_game_a7bb9176e07b6f6c73c930dba6400265f}{}\label{class_game_a7bb9176e07b6f6c73c930dba6400265f}
+
+
+Definition at line 130 of file Game.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/rcc/\+Desktop/\+C\+S\+C-\/17\+A-\/42636/\+Project/\+Project2/\+Battle\+Ship\+P2\+\_\+\+Final\+Version/\hyperlink{_game_8h}{Game.\+h}\item 
+C\+:/\+Users/rcc/\+Desktop/\+C\+S\+C-\/17\+A-\/42636/\+Project/\+Project2/\+Battle\+Ship\+P2\+\_\+\+Final\+Version/\hyperlink{_game_8cpp}{Game.\+cpp}\end{DoxyCompactItemize}

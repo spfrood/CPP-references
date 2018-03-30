@@ -1,0 +1,208 @@
+graphics.h
+
+This interface provides access to a simple graphics library that makes it possible to draw lines, rectangles, ovals, arcs, polygons, images, and strings on a graphical window.
+Functions
+initGraphics()
+initGraphics(width, height) 	Creates the graphics window on the screen.
+drawArc(bounds, start, sweep)
+drawArc(x, y, width, height, start, sweep) 	Draws an elliptical arc inscribed in a rectangle.
+fillArc(bounds, start, sweep)
+fillArc(x, y, width, height, start, sweep) 	Fills a wedge-shaped area of an elliptical arc.
+drawImage(filename, pt)
+drawImage(filename, x, y)
+drawImage(filename, bounds)
+drawImage(filename, x, y, width, height) 	Draws the image from the specified file with its upper left corner at the specified point.
+getImageBounds(filename) 	Returns the bounds of the image contained in the specified file.
+drawLine(p0, p1)
+drawLine(x0, y0, x1, y1) 	Draws a line connecting the specified points.
+drawPolarLine(p0, r, theta)
+drawPolarLine(x0, y0, r, theta) 	Draws a line of length r in the direction theta from the initial point.
+drawOval(bounds)
+drawOval(x, y, width, height) 	Draws the frame of a oval with the specified bounds.
+fillOval(bounds)
+fillOval(x, y, width, height) 	Fills the frame of a oval with the specified bounds.
+drawRect(bounds)
+drawRect(x, y, width, height) 	Draws the frame of a rectangle with the specified bounds.
+fillRect(bounds)
+fillRect(x, y, width, height) 	Fills the frame of a rectangle with the specified bounds.
+drawPolygon(polygon)
+drawPolygon(polygon, pt)
+drawPolygon(polygon, x, y) 	Draws the outline of the specified polygon.
+fillPolygon(polygon)
+fillPolygon(polygon, pt)
+fillPolygon(polygon, x, y) 	Fills the frame of the specified polygon.
+drawString(str, pt)
+drawString(str, x, y) 	Draws the string str so that its baseline origin appears at the specified point.
+getStringWidth(str) 	Returns the width of the string str when displayed in the current font.
+setFont(font) 	Sets a new font.
+getFont() 	Returns the current font.
+setColor(color) 	Sets the color used for drawing.
+getColor() 	Returns the current color as a string in the form "#rrggbb".
+saveGraphicsState() 	Saves the state of the graphics context.
+restoreGraphicsState() 	Restores the graphics state from the most recent call to saveGraphicsState().
+getWindowWidth() 	Returns the width of the graphics window in pixels.
+getWindowHeight() 	Returns the height of the graphics window in pixels.
+repaint() 	Issues a request to update the graphics window.
+pause(milliseconds) 	Pauses for the indicated number of milliseconds.
+waitForClick() 	Waits for a mouse click to occur anywhere in the window.
+setWindowTitle(title) 	Sets the title of the primary graphics window.
+getWindowTitle() 	Returns the title of the primary graphics window.
+exitGraphics() 	Closes the graphics window and exits from the application without waiting for any additional user interaction.
+Function detail
+ void initGraphics();
+void initGraphics(int width, int height);
+Creates the graphics window on the screen. The first form creates a window with a default size of 500x300; the second allows the client to specify the size of the window. The call to initGraphics must precede any console output or calls to other functions in this interface.
+Usage:
+initGraphics();
+initGraphics(width, height);
+ void drawArc(GRectangle bounds, double start, double sweep);
+void drawArc(double x, double y, double width, double height,
+                                 double start, double sweep);
+Draws an elliptical arc inscribed in a rectangle. The parameters x, y, width, and height (or, equivalently, the GRectangle bounds) specify the coordinates and dimensions of the bounding rectangle. The start parameter indicates the angle at which the arc begins and is measured in degrees counterclockwise from the +x axis. Thus, a start angle of 0 indicates an arc that begins along the line running eastward from the center, a start angle of 135 begins along the line running northwest, and a start angle of -90 begins along the line running south. The sweep parameter indicates the extent of the arc and is also measured in degrees counterclockwise. A sweep angle of 90 defines a quarter circle extending counterclockwise from the start angle, and a sweep angle of -180 defines a semicircle extending clockwise.
+Usage:
+drawArc(bounds, start, sweep);
+drawArc(x, y, width, height, start, sweep);
+ void fillArc(GRectangle bounds, double start, double sweep);
+void fillArc(double x, double y, double width, double height,
+                                 double start, double sweep);
+Fills a wedge-shaped area of an elliptical arc. The parameters are interpreted in the same way as those for drawArc.
+Usage:
+fillArc(bounds, start, sweep);
+fillArc(x, y, width, height, start, sweep);
+ void drawImage(string filename, GPoint pt);
+void drawImage(string filename, double x, double y);
+void drawImage(string filename, GRectangle bounds);
+void drawImage(string filename, double x, double y,
+                                     double width, double height);
+Draws the image from the specified file with its upper left corner at the specified point. The forms of the call that include the bounds scale the image so that it fits inside the specified rectangle.
+Usage:
+drawImage(filename, pt);
+drawImage(filename, x, y);
+drawImage(filename, bounds);
+drawImage(filename, x, y, width, height);
+ GRectangle getImageBounds(string filename);
+Returns the bounds of the image contained in the specified file. Only the width and height components of the rectangle are of interest; the x and y components are always 0.
+Usage:
+GRectangle bounds = getImageBounds(filename);
+ void drawLine(GPoint p0, GPoint p1);
+void drawLine(double x0, double y0, double x1, double y1);
+Draws a line connecting the specified points.
+Usage:
+drawLine(p0, p1);
+drawLine(x0, y0, x1, y1);
+ GPoint drawPolarLine(GPoint p0, double r, double theta);
+GPoint drawPolarLine(double x0, double y0, double r, double theta);
+Draws a line of length r in the direction theta from the initial point. The angle theta is measured in degrees counterclockwise from the +x axis. The function returns the end point of the line.
+Usage:
+GPoint p1 = drawPolarLine(p0, r, theta);
+GPoint p1 = drawPolarLine(x0, y0, r, theta);
+ void drawOval(GRectangle bounds);
+void drawOval(double x, double y, double width, double height);
+Draws the frame of a oval with the specified bounds.
+Usage:
+drawOval(bounds);
+drawOval(x, y, width, height);
+ void fillOval(GRectangle bounds);
+void fillOval(double x, double y, double width, double height);
+Fills the frame of a oval with the specified bounds.
+Usage:
+fillOval(bounds);
+fillOval(x, y, width, height);
+ void drawRect(GRectangle bounds);
+void drawRect(double x, double y, double width, double height);
+Draws the frame of a rectangle with the specified bounds.
+Usage:
+drawRect(bounds);
+drawRect(x, y, width, height);
+ void fillRect(GRectangle bounds);
+void fillRect(double x, double y, double width, double height);
+Fills the frame of a rectangle with the specified bounds.
+Usage:
+fillRect(bounds);
+fillRect(x, y, width, height);
+ void drawPolygon(Vector<GPoint> polygon);
+void drawPolygon(Vector<GPoint> polygon, GPoint pt);
+void drawPolygon(Vector<GPoint> polygon, double x, double y);
+Draws the outline of the specified polygon. The optional pt or x and y parameters shift the origin of the polygon to the specified point.
+Usage:
+drawPolygon(polygon);
+drawPolygon(polygon, pt);
+drawPolygon(polygon, x, y);
+ void fillPolygon(Vector<GPoint> polygon);
+void fillPolygon(Vector<GPoint> polygon, GPoint pt);
+void fillPolygon(Vector<GPoint> polygon, double x, double y);
+Fills the frame of the specified polygon. The optional pt or x and y parameters shift the origin of the polygon to the specified point.
+Usage:
+fillPolygon(polygon);
+fillPolygon(polygon, pt);
+fillPolygon(polygon, x, y);
+ void drawString(string str, GPoint pt);
+void drawString(string str, double x, double y);
+Draws the string str so that its baseline origin appears at the specified point. The text appears in the current font and color.
+Usage:
+drawString(str, pt);
+drawString(str, x, y);
+ double getStringWidth(string str);
+Returns the width of the string str when displayed in the current font.
+Usage:
+double width = getStringWidth(str);
+ void setFont(string font);
+Sets a new font. The font parameter is a string in the form family-style-size. In this string, family is the name of the font family; style is either missing (indicating a plain font) or one of the strings Bold, Italic, or BoldItalic; and size is an integer indicating the point size. If any of these components is specified as an asterisk, the existing value is retained. The font parameter can also be a sequence of such specifications separated by semicolons, in which the first available font on the system is used.
+Usage:
+setFont(font);
+ string getFont();
+Returns the current font.
+Usage:
+string font = getFont();
+ void setColor(string color);
+Sets the color used for drawing. The color parameter is usually one of the predefined color names from Java: BLACK, BLUE, CYAN, DARK_GRAY, GRAY, GREEN, LIGHT_GRAY, MAGENTA, ORANGE, PINK, RED, WHITE, or YELLOW.
+The case of the individual letters in the color name is ignored, as are spaces and underscores, so that the Java color DARK_GRAY could be written as "Dark Gray".
+
+The color can also be specified as a string in the form "#rrggbb" where rr, gg, and bb are pairs of hexadecimal digits indicating the red, green, and blue components of the color.
+
+Usage:
+setColor(color);
+ string getColor();
+Returns the current color as a string in the form "#rrggbb". In this string, the values rr, gg, and bb are two-digit hexadecimal values representing the red, green, and blue components of the color, respectively.
+Usage:
+string color = getColor();
+ void saveGraphicsState();
+Saves the state of the graphics context. This function is used in conjunction with restoreGraphicsState() to avoid changing the state set up by the client.
+Usage:
+saveGraphicsState();
+ void restoreGraphicsState();
+Restores the graphics state from the most recent call to saveGraphicsState().
+Usage:
+restoreGraphicsState();
+ double getWindowWidth();
+Returns the width of the graphics window in pixels.
+Usage:
+double width = getWindowWidth();
+ double getWindowHeight();
+Returns the height of the graphics window in pixels.
+Usage:
+double height = getWindowHeight();
+ void repaint();
+Issues a request to update the graphics window. This function is called automatically when the program pauses, waits for an event, waits for user input on the console, or terminates. As a result, most clients will never need to call repaint explicitly.
+Usage:
+repaint();
+ void pause(double milliseconds);
+Pauses for the indicated number of milliseconds. This function is useful for animation where the motion would otherwise be too fast.
+Usage:
+pause(milliseconds);
+ void waitForClick();
+Waits for a mouse click to occur anywhere in the window.
+Usage:
+waitForClick();
+ void setWindowTitle(string title);
+Sets the title of the primary graphics window.
+Usage:
+setWindowTitle(title);
+ string getWindowTitle();
+Returns the title of the primary graphics window.
+Usage:
+string title = getWindowTitle();
+ void exitGraphics();
+Closes the graphics window and exits from the application without waiting for any additional user interaction.
+Usage:
+exitGraphics();

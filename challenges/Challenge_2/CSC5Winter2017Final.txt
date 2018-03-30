@@ -1,0 +1,224 @@
+Final for CSC 5 Winter 2017
+  
+Points for each question
+menu 10
+1 15
+2 15
+3 15
+4 15
+5 15
+6 15
+
+Note: Submit the Final to my personal email account mark.lehr@rcc.edu 
+with the following subject:  LastName,FirstName - FinalCSC5 - section number.
+Be sure to copy yourself on the email and submit to blackboard.
+Do the best you can and turn in as much as you can.
+Do not put this test into Github.
+
+Note:  I just want one program for all the solutions to follow. 
+The program should prompt the user for which problem solution to display. 
+Code each problem in its own function such as void Problem1(void), 
+void Problem2(void), etc.....  Yes, those functions can use other functions
+you might need to solve the problem.  Then the program should return
+to the menu without exiting unless the exit choice has been choosen.
+Solve separately in a project and transfer to the menu project when
+completed.
+
+
+/*Problem 1
+Write a function that takes an unsigned
+short integer and returns a signed short
+number in reverse.  For instance 106 
+reversed would be 601.  Another would be 
+30000 gives 3.  Subtract the largest 3
+digit number you can without going negative.  
+Check to make sure the 
+conversion falls within the range for a
+signed short. If it doesn't then output
+no conversion possible else output the result.
+*/
+
+
+/*
+Problem 2
+Write a program that plays the game "Guess the
+Number" as follows.  Your program chooses the
+number to be guessed by selecting an unsigned integer
+at random in the range 1 to 10^X.  The program
+inputs X and displays
+
+
+I have a number between 1 and 10^X
+Can you guess my number?  You will be
+given a maximum integer of (log2(10^X)+1) guesses.
+Please type your first guess.
+
+
+The player then types a guess.  The
+program responds with one of the following.
+
+
+1. Congratulations, You guessed the number!
+   Would you like to play again(y or n)?
+2. Too low.  Try again.
+3. Too High. Try again.
+4. Too many tries.
+
+Flowchart your code.
+
+Note:  if you type in X=3 then integer of log2(10^3)+1=10;
+*/
+
+
+/*
+Problem 3
+Create a function that fills one vector with even
+random 2 digit numbers and another vector with
+odd random numbers.  Prompt the user for the size
+of these vectors.  Both will be the same size.
+Output the results in 2 column format.
+Even   Odd  
+
+These should be done
+with 2 functions, fillVec and prntVec.
+
+Then do the same with a 2-Dim array where the
+first column has even numbers and the second
+column has the odd numbers.
+
+These should be done
+with 2 functions, fillAry and prntAry.
+Fill the 2-Dim array with the odd and even vectors
+previously filled.
+
+I want to see how you pass the arrays and vectors
+in and out of the functions.
+
+*/
+
+
+/*
+Problem #4  (Random Sequence)
+        Create a function/method/procedure that
+returns a random number from the following set,
+{9,52,78,101,119}.  Loop 10000 times with this 
+procedure and print the frequency of each of 
+the 5 numbers obtained.  Hint: Use an array for 
+the sequence and frequency.  
+
+
+The following is a brief hint on items that might 
+be helpful in obtaining the results.  This is not 
+direct code but more pseudo code related.  Don't 
+try and run the following directly and more code 
+will be needed.
+
+
+Setup
+        const int n=5,ntimes=10000;
+        int freq[n]={0};
+        short int rndseq[]={9,52,78,101,119};
+
+
+Call to the routine to return a random sequence
+        retrand(rndseq,freq,n,ntimes);
+
+
+Results
+        cout<<rndseq[i]<<" occurred "<<
+                freq[i]<<" times"<<endl;
+
+
+Sample Output
+         9 occurred 2055 times
+        52 occurred 1986 times
+        78 occurred 1962 times
+        101 occurred 2079 times
+        119 occurred 1919 times
+
+
+Note:  Your results are not expected to be exactly
+the same!  After all these are pseudo-random 
+number sequences with different seeds.  
+*/
+
+
+/*
+Problem #5  (All Kinds of Sorting)
+Sort a 10x15 array of characters.  Largest located
+at index [0][0-14] and smallest at index [9][0-14].  
+Create a procedure that passes the array to a print routine, 
+then a procedure that sorts the array and returns the sorted array 
+to the original procedure, and finish by using the same print routine.  
+Fill the array with
+
+
+Lcekoeddhoffbme
+Lkcmggjcdhhglif
+Cgldjhcekjigcde
+Cgldjhcekjigcdz
+Bfgmdbkcenlafjk
+Fggdijijegfblln
+Jjlncnimjldfedj
+Amliglfohajcdmm
+Balgfcaelhfkgeb
+Kmlhmhcddfoeild
+
+
+Note:  This is a character array
+The output would be
+
+
+Lkcmggjcdhhglif
+Lcekoeddhoffbme
+Kmlhmhcddfoeild
+Jjlncnimjldfedj
+Fggdijijegfblln
+Cgldjhcekjigcdz
+Cgldjhcekjigcde
+Bfgmdbkcenlafjk
+Balgfcaelhfkgeb
+Amliglfohajcdmm
+
+Full credit will be given if a file is used to read in the array.
+Name the file input.dat
+
+*/
+
+
+/*
+Problem #6  (Spreadsheet Stuff)
+        Create the following input tables.  Output
+the sum of the rows, columns and grand total.  You
+will need to create procedures that print the table,
+then sum rows, columns and grand total, then pass
+that information to the same print routine.  Note:
+the 2 procedures printTable,SumTable and finally a
+call to printTable again are all invoked from subroutine 
+main.  I want to see each number formatted to 6 spaces.  
+Print the table out exactly as below.
+
+
+Example Input Table
+   136   101   102   103   104   105
+   106   107   108   109   110   111
+   112   113   114   115   116   117
+   118   119   120   121   122   123
+   124   125   126   127   129   130
+Example Output Augmented Table with rows summed,
+columns summed and the grand total printed.
+   136   101   102   103   104   105   651
+   106   107   108   109   110   111   651
+   112   113   114   115   116   117   687
+   118   119   120   121   122   123   723
+   124   125   126   127   129   130   761
+   596   565   570   575   581   587  3474
+
+
+More credit will be given if you read the input and write 
+the results to a file.  However, if you can't do this in 
+a procedure then embed in the program.  But full credit 
+will not be given for the problem if files
+are not utilized. Name the files table.dat and augtable.dat
+
+Flowchart your code

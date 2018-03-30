@@ -1,0 +1,139 @@
+MidTerm  CSC5  
+
+Points for each question
+Menu  5
+1    15
+2    15
+3    20
+4    15
+5    15
+6    15
+
+Note: Submit the Midterm to my RCC email account mark.lehr@rcc.edu
+with the following
+subject:  LastName,FirstName - Midterm - Section #.
+Also submit to Blackboard.
+
+Submit the solutions/program in a zipped file.
+Do the best you can and turn in as much as you can.  
+Do not post to Github, just an email and in Blackboard.
+You must do all work yourself, no help allowed.  You may
+ask questions to clarify the problem.
+
+Note:  Solve each problem in its own project.  Then copy each to a final program that contains
+a menu with the following format.  
+https://github.com/ml1150258/LehrMark_CSC5_CIS5_40488-9_40107-8/tree/master/Lab/ExampleMenuWithFunctions
+another example,
+https://github.com/ml1150258/LehrMark_CSC5_CIS5_40488-9_40107-8/blob/master/Lab/ExampleMenu_FunctionsWith3Problems/main.cpp
+One program for the solution to all the problems that follow. 
+
+
+1)  Input the number than make an X in the following way,
+for instance, when you input a 5 you output.
+Note:  Instructor will not type in a number <1 or >50
+
+5   1
+ 4 2
+  3
+ 4 2
+5   1
+
+when you input a 7 you output
+
+7     1
+ 6   2
+  5 3
+   4
+  5 3
+ 6   2
+7     1
+
+if you input an even number
+
+1  4
+ 23
+ 23
+1  4
+
+Use for-loops, and Flowchart this solution.
+	
+
+
+2)  Read a 4 character number.  Output the result in in the following
+format, input = 9873
+3 ***
+7 *******
+8 ********
+9 *********
+
+If one of the numbers is not a digit, then put a ? mark
+input = 98a3
+3 ***
+a ?
+8 ********
+9 *********
+
+
+3)  We would like to write a check.  Input the following:
+Date, Payee, Amount, and the account holder.  Output these
+in the following format, but the amount needs to be output
+numerically as well as grammatically just like a check.
+Range for the check amount = $1 to $1999 (integers, no 
+cents)
+
+Input the following 4 values
+Date:            01/01/15
+Payee:           John Doe
+Amount:          $811
+Account Holder:  Jane Doe
+
+
+Output a written check
+
+Jane Doe
+STREET ADDRESS
+CITY, STATE  ZIP                            Date:  01/01/15
+
+Pay to the Order of:  John Doe              $ 811.00
+
+Eight Hundred Eleven and no/100s Dollars
+
+BANK OF CSC5
+
+FOR:  GOTTA PAY THE RENT	            Jane Doe	
+
+
+
+4) An ISP has 3 different subscription packages
+	a)  $16.75 per month, 5 hours access.  Additional hours
+	    are $0.75 up to 20 hours then $1 for all additional
+	    hours.
+	b)  $23.75 per month, 15 hours access.  Additional hours
+        are $0.55 up to 25 hours then $0.70 for each
+	    hour above this limit.
+	c)  $29.95 per month unlimited access
+Write a program that calculates a customers monthly bill.  
+Ask which package, and how many hours then display the monthly charge.  
+Also, output when customers should transition to another package and 
+what package that should be to save the most money.  Calculate the money saved.
+
+
+
+5)  Develop an application that will determine the gross pay for 
+employees. The company pays "straight-time" for the 
+first 20 hours worked, double time for all hours worked in 
+excess of 20 hours but less than 40 hours, and triple time for any 
+hours worked over 40 hours. Inputs to the program would be hours worked 
+and rate of pay.  Output would be gross pay.
+
+
+
+6)  Just another sequence, 
+
+sum = x - x^3/3! + x^5/5! - x^7/7! + ............
+
+Input x and the number of terms=n, output the result.
+Note:  x^1 = x,   x^2 = x*x,  x^3 = x*x*x
+       3! = 1*2*3  5!=1*2*3*4*5
+
+Flowchart and code this solution.
